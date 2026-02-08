@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("reset.css");
+body {
+  background: #373c55;
+  font-family: "Open Sans", sans-serif;
+}
+#admin {
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: calc(var(--index) * 2);
+    .title {
+      font-weight: 700;
+      font-size: calc(var(--index) * 2);
+      color: #fff;
+      text-align: left;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      margin-top: calc(var(--index) * 2);
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input[type="text"] {
+          width: 200px;
+          border: none;
+          font-size: calc(var(--index) * 1.2);
+          font-weight: 600;
+          border-bottom: 2px solid #fff;
+          font-family: "Open Sans", sans-serif;
+          outline: none;
+          padding: 5px 0;
+          margin-left: calc(var(--index) * 0.2);
+          background: transparent;
+          color: #fff;
+          text-transform: capitalize;
+          padding-left: 6px;
+        }
+        input[type="number"] {
+          width: 120px;
+          border: none;
+          border-bottom: 2px solid #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: calc(var(--index) * 1.2);
+          font-weight: 700;
+          margin-left: calc(var(--index) * 0.2);
+          outline: none;
+          /* padding: 5px 0; */
+          background: transparent;
+          color: #fff;
+          padding-left: 6px;
+        }
+        label {
+          font-weight: 600;
+          font-size: calc(var(--index) * 1.4);
+          color: #fff;
+        }
+        .description {
+          display: flex;
+          textarea {
+            border-radius: 10px;
+            width: calc(var(--index) * 11);
+            height: calc(var(--index) * 5.5);
+            background: #fff;
+            font-weight: 700;
+            font-size: calc(var(--index) * 0.9);
+            color: #373c55;
+            margin-left: calc(var(--index) * 0.6);
+            border: none;
+          }
+        }
+        button {
+          border-radius: 10px;
+          margin-top: calc(var(--index) * 1.5);
+          width: calc(var(--index) * 6);
+          height: calc(var(--index) * 2.4);
+          background: #414040;
+          font-weight: 700;
+          font-size: calc(var(--index) * 0.85);
+          color: #fff;
+        }
+        .price {
+          display: flex;
+          p {
+            font-weight: 600;
+            font-size: calc(var(--index) * 1.4);
+            color: #fff;
+            margin-right: -20px;
+          }
+        }
+      }
+      .right {
+        .img {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .image {
+            width: calc(var(--index) * 28);
+            height: calc(var(--index) * 16.5);
+            background: #fff;
+            font-weight: 600;
+            font-size: 70px;
+            font-size: calc(var(--index) * 3);
+            text-align: center;
+            padding-top: calc(var(--index) * 3.5);
+            color: #817e7e;
+          }
+          .file-upload {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: calc(var(--index) * 1.5);
+            #img {
+              opacity: 0;
+              position: absolute;
+              z-index: -1;
+            }
+
+            .custom-label {
+              display: inline-block;
+              padding: 13px 20px;
+              background: #e5e5e5;
+              color: white;
+              font-weight: 700;
+              font-size: 24px;
+              color: #000;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background 0.3s;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1168px) {
+  #admin {
+    .container {
+      .title{
+        text-align: center;
+      }
+      form{
+        justify-content: center;
+        .right{
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

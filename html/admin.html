@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="icon" href="../img/photo_2026-01-29_15-05-31-Photoroom.png" />
+    <title>Админ</title>
+  </head>
+  <body>
+    <section id="admin">
+      <div class="container">
+        <h1 class="title">Новая игра</h1>
+        <form action="/">
+          <div class="left">
+            <div class="name">
+              <label for="name">Название:</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="janr">
+              <label for="janr">Жанр:</label>
+              <input type="text" name="janr" id="janr" />
+            </div>
+            <div class="working">
+              <label for="working">Разработчик:</label>
+              <input type="text" name="working" id="working" />
+            </div>
+            <div class="description">
+              <label for="description">Описание:</label>
+              <textarea
+                id="description"
+                name="message"
+                rows="4"
+                cols="30"
+              ></textarea>
+            </div>
+            <div class="price">
+              <label for="price">Цена:</label>
+              <input type="number" name="price" id="price" />
+              <p>₽</p>
+            </div>
+            <button type="submit">Добавить</button>
+          </div>
+          <div class="right">
+            <div class="img">
+              <div class="image">
+                Нажми <br />
+                "Добавить"
+              </div>
+              <div class="file-upload">
+                <label for="img" class="custom-label">Добавить</label>
+                <input type="file" name="img" id="img" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

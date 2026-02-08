@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("reset.css");
+body {
+  background: #373c55;
+  font-family: "Open Sans", sans-serif;
+}
+
+.register {
+    display: flex;
+    width: calc(var(--index) * 21);
+    height: calc(var(--index) * 40.5);
+    margin-top: calc(var(--index) * 5);
+    font-size: calc(var(--index) * 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    background: #30323d;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    h1 {
+      font-weight: 700;
+      text-align: center;
+      font-size: calc(var(--index) * 2.5);
+      margin-bottom: calc(var(--index) * 1.7);
+      margin-top: calc(var(--index) * 1.5);
+      color: #fff;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      input {
+        background: #d9d9d9;
+        color: #1c1f2b;
+        border-radius: 5px;
+        padding-left: calc(var(--index) * 0.6);
+        margin-left: calc(var(--index) * 0.6);
+        margin-top: calc(var(--index) * 0.3);
+        margin-bottom: calc(var(--index) * 1.2);
+        width: calc(var(--index) * 14.5);
+        height: calc(var(--index) * 2.2);
+        font-size: calc(var(--index) * 0.74);
+      }
+      input[type="text"] {
+        text-transform: capitalize;
+      }
+      .checkbox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: calc(var(--index) * 0.52);
+        p{
+          margin-top: calc(var(--index) * -0.92);
+        }
+        input[type="checkbox"] {
+          width: calc(var(--index) * 1);
+          height: calc(var(--index) * 1);
+          accent-color: #373c55;
+          
+        }
+      }
+      button {
+        border-radius: 5px;
+        padding-left: calc(var(--index) * 0.2);
+        margin-left: calc(var(--index) * 0.2);
+        margin-top: calc(var(--index) * 0.2);
+        margin-bottom: calc(var(--index) * 1.2);
+        width: calc(var(--index) * 14.5);
+        height: calc(var(--index) * 2.2);
+        background: #1c1f2b;
+        font-weight: 600;
+        font-size: calc(var(--index) * 1.2);
+        text-align: center;
+        color: #fff;
+      }
+    }
+
+  }

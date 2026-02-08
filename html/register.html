@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <link rel="icon" href="../img/photo_2026-01-29_15-05-31-Photoroom.png" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <div class="register">
+      <h1>Регистрация</h1>
+      <form action="#" method="POST">
+        <input
+          type="email"
+          name="email"
+          placeholder="Электронная почта"
+          required
+        />
+        <input type="text" name="lastname" placeholder="Фамилия" required />
+        <input type="text" name="username" placeholder="Имя" required />
+        <input
+          type="date"
+          name="data of birth"
+          placeholder="Дата рождения"
+          required
+        />
+        <input type="number" name="tel" placeholder="Номер телефона" required />
+        <input type="password" name="password" placeholder="Пароль" required />
+        <input
+          type="password"
+          name="password repeat"
+          placeholder="Повтор пароль"
+          required
+        />
+        <div class="checkbox">
+          <input type="checkbox" required/>
+          <p>Я соглашаюсь на обработку персональных данных</p>
+        </div>
+        <button type="submit">Регистрация</button>
+        <div class="link">
+          <a href="login.html">Войти</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
